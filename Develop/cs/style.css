@@ -1,0 +1,19 @@
+
+ body{
+    position: relative;
+ }
+button{
+    display: block;
+}
+.weather-container{
+    display: flex;
+    left: 300px;
+}
+
+.today-weather{
+    position: relative;
+}
+.forcast{
+    position: absolute;
+    flex-direction: row;
+}

@@ -8,37 +8,35 @@
     <title>Weather</title>
 </head>
 <body>
-     
-     <h2>Weather Dashboard</h2>
+     <h2 class = "head-class">Weather Dashboard</h2>
 
-  <div>
-      <div class="weather"> Search for a City: <br>
-          <input type = "search"placeholder="city-name">
-            <div class="card">
-                <h3 class="card-header text-uppercase">Search </h3>
-                <div id="language-buttons" class="card-body">
-                <div><button data-language="javascript" class="btn">City1</button></div>
-                <div><button data-language="html" class="btn">city2</button></div>
-                <div><button data-language="css" class="btn">city3</button></div>
-                <div><button data-language="css" class="btn">city4</button></div>
-                <div><button data-language="css" class="btn">city5</button></div> 
-           </div>
-        </div>
+  <div class = "weather-container">
+      <div class="weather"> <b> Search for a City</b>: <br>
+          <input type ="search" class ="search-box" placeholder = "city-name">
+           <div class="city-container">
+              <h3 class="search-city">Search </h3>
+             <div id="city-buttons" class="cities">
+                <button data-language="javascript" class="btn">City1</button>
+                <button data-language="html" class="btn">city2</button>
+                <button data-language="css" class="btn">city3</button>
+                <button data-language="css" class="btn">city4</button>
+                <button data-language="css" class="btn">city5</button>
+              </div>
+            </div>
+       </div>
 
-        <div class="today-weather">
+       <div class="today-weather">
              <div class ="details">
-                <h2 class="cityname">city</h2>
-                <p class="day">Day</p>
+                <p class="day">Atlanta (9/13/2023) <span class = "icon"></span></p>
                 <div class="current-weather">
-                    <p class="humidity-indicator"><span class="humid">100</span>%</p>
-                    <p class="wind-indicator"><span class=" wind">76</span>MPH</p>
-                    <p class="temperature-indicator"><span class="temperature">40</span>%</p>
+                    <p class="humidity-indicator"><span class="humid">Temp: 76.62</span>%</p>
+                    <p class="wind-indicator"><span class ="wind">Wind</span>MPH</p>
+                    <p class="temperature-indicator"><span class="temperature">Humidiity</span>%</p>
                 </div>
              </div>
-           <img src= "images/clear/.png" alt ="clear" class = "image">
-       </div>
-  
-      <div class="forcast">
+      
+     
+       <div class="forcast">
         <article class="forcast-article">
             <h3 class="forcast-day">Day</h3>
             <img src="images/clear/.png" alt="clear" class="forcast-icon">
@@ -53,34 +51,35 @@
                 <p class="forcast-temperature"><span class ="temperature">+100</span> &deg; F</p>
                 <p class="forcast-wind"> <span class ="wind">+78</span> &deg; MPH</p>
                 <p class="forcast-humidity"> <span class ="humidity">+100</span> &deg; %</p>
-           </article>
+        </article>
 
-           <article class="forcast-article">
+        <article class="forcast-article">
                 <h3 class="forcast-day">Day</h3>
                 <img src="images/clear/.png" alt="clear" class="forcast-icon">
                 <p class="forcast-temperature"><span class ="temperature">+100</span> &deg; F</p>
                 <p class="forcast-wind"> <span class ="wind">+78</span> &deg; MPH</p>
                 <p class="forcast-humidity"> <span class ="humidity">+100</span> &deg; %</p>
-           </article>
+          </article>
 
-           <article class="forcast-article">
+          <article class="forcast-article">
                 <h3 class="forcast-day">Day</h3>
                 <img src="images/clear/.png" alt="clear" class="forcast-icon">
                 <p class="forcast-temperature"><span class ="temperature">+100</span> &deg; F</p>
                 <p class="forcast-wind"> <span class ="wind">+78</span> &deg; MPH</p>
                 <p class="forcast-humidity"> <span class ="humidity">+100</span> &deg; %</p>
-           </article>
+         </article>
 
-           <article class="forcast-article">
+         <article class="forcast-article">
                 <h3 class="forcast-day">Day</h3>
                 <img src="images/clear/.png" alt=" clear" class="forcast-icon">
                 <p class="forcast-temperature"> <span class ="temperature">+100</span> &deg; F</p>
                 <p class="forcast-wind"> <span class ="wind">+78</span> &deg; MPH</p>
                 <p class="forcast-humidity"> <span class ="humidity">+100</span> &deg; %</p>
+          </article>
+       </div>
+      </div> 
 
-           </article>
-           <script src="/Develop/js/script.js"></script>
-      </div>
-</div>
+  </div>
+    <script src="/Develop/js/script.js"></script>
 </body>
 </html>
