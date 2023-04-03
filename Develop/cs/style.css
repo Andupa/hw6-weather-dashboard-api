@@ -38,12 +38,12 @@ position: relative;
 
  }
   #days-forcast div{
-    width: 153px;
+    width: 140px;
     border: 0.1px solid black;
      background-color:  #04043d;
-     margin-left: 5px;
-     
-     height: 150px;
+     margin-left: 8px;
+     height: 120px;
+  
   }
   
  .weather{
@@ -76,7 +76,7 @@ position: relative;
  #current-date{
     border:0.25px solid black;
     height: 140px;
-    width: 800px;
+    width: 75git0px;
  }
  .head-class{
    padding-left: 650px;
