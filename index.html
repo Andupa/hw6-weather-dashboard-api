@@ -9,77 +9,34 @@
 </head>
 <body>
      <h2 class = "head-class">Weather Dashboard</h2>
-
   <div class = "weather-container">
-      <div class="weather"> <b> Search for a City</b>: <br>
-          <input type ="search" class ="search-box" placeholder = "city-name">
-           <div class="city-container">
-              <h3 class="search-city">Search </h3>
-             <div id="city-buttons" class="cities">
-                <button data-language="javascript" class="btn">City1</button>
-                <button data-language="html" class="btn">city2</button>
-                <button data-language="css" class="btn">city3</button>
-                <button data-language="css" class="btn">city4</button>
-                <button data-language="css" class="btn">city5</button>
-              </div>
-            </div>
-       </div>
 
-       <div class="today-weather">
-             <div class ="details">
-                <p class="day">Atlanta (9/13/2023) <span class = "icon"></span></p>
-                <div class="current-weather">
-                    <p class="humidity-indicator"><span class="humid">Temp: 76.62</span>%</p>
-                    <p class="wind-indicator"><span class ="wind">Wind</span>MPH</p>
-                    <p class="temperature-indicator"><span class="temperature">Humidiity</span>%</p>
-                </div>
-             </div>
-      
-     
-       <div class="forcast">
-        <article class="forcast-article">
-            <h3 class="forcast-day">Day</h3>
-            <img src="images/clear/.png" alt="clear" class="forcast-icon">
-            <p class="forcast-temperature"> <span class ="temperature">+100</span> &deg; F</p>
-            <p class="forcast-wind"> <span class ="wind">+78</span> &deg; MPH</p>
-            <p class="forcast-humidity"> <span class ="humidity">+100</span> &deg; %</p>
-        </article>
-
-        <article class="forcast-article">
-                <h3 class="forcast-day">Day</h3>
-                <img src="images/clear/.png"alt="clear" class="forcast-icon">
-                <p class="forcast-temperature"><span class ="temperature">+100</span> &deg; F</p>
-                <p class="forcast-wind"> <span class ="wind">+78</span> &deg; MPH</p>
-                <p class="forcast-humidity"> <span class ="humidity">+100</span> &deg; %</p>
-        </article>
-
-        <article class="forcast-article">
-                <h3 class="forcast-day">Day</h3>
-                <img src="images/clear/.png" alt="clear" class="forcast-icon">
-                <p class="forcast-temperature"><span class ="temperature">+100</span> &deg; F</p>
-                <p class="forcast-wind"> <span class ="wind">+78</span> &deg; MPH</p>
-                <p class="forcast-humidity"> <span class ="humidity">+100</span> &deg; %</p>
-          </article>
-
-          <article class="forcast-article">
-                <h3 class="forcast-day">Day</h3>
-                <img src="images/clear/.png" alt="clear" class="forcast-icon">
-                <p class="forcast-temperature"><span class ="temperature">+100</span> &deg; F</p>
-                <p class="forcast-wind"> <span class ="wind">+78</span> &deg; MPH</p>
-                <p class="forcast-humidity"> <span class ="humidity">+100</span> &deg; %</p>
-         </article>
-
-         <article class="forcast-article">
-                <h3 class="forcast-day">Day</h3>
-                <img src="images/clear/.png" alt=" clear" class="forcast-icon">
-                <p class="forcast-temperature"> <span class ="temperature">+100</span> &deg; F</p>
-                <p class="forcast-wind"> <span class ="wind">+78</span> &deg; MPH</p>
-                <p class="forcast-humidity"> <span class ="humidity">+100</span> &deg; %</p>
-          </article>
-       </div>
-      </div> 
-
+        <div class="weather"><b>Search for a City</b>: <br>
+            <input type ="search" id="search-box" placeholder ="city-name" >
+            <button class="city-button">Search</button>
+            <div class="city-container"></div>
+            <div id="city-buttons" class="cities"></div>
+        </div>
+       
+        <div id ="forcast-container">
+         <p id = "current-date"><span id = "date-time"></span> <span id ="icon"></span></p>
+         <h3>5-Day Forcast: <br><span id = "5Day-forcast"></span></h3>
+          <div id = "days-forcast">
+           <div>1</div>
+           <div>2</div>
+           <div>3</div>
+           <div>4</div>
+           <div>5</div> 
+        </div>
   </div>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script
+  <script
+  src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
+  integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U="
+  crossorigin="anonymous"
+
+></script>
+
     <script src="/Develop/js/script.js"></script>
 </body>
 </html>
