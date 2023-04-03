@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="./Develop/cs/style.css">
     <title>Weather</title>
 </head>
@@ -12,9 +13,16 @@
   <div class = "weather-container">
 
         <div class="weather"><b>Search for a City</b>: <br>
-            <input type ="search" id="search-box" placeholder ="city-name" >
+            <input type ="text" id="search-box" placeholder =" " >
             <button class="city-button">Search</button>
-            <div class="city-container"></div>
+            <div class="city-container">
+                <div ></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
             <div id="city-buttons" class="cities"></div>
         </div>
        
@@ -22,20 +30,19 @@
          <p id = "current-date"><span id = "date-time"></span> <span id ="icon"></span></p>
          <h3>5-Day Forcast: <br><span id = "5Day-forcast"></span></h3>
           <div id = "days-forcast">
-           <div>1</div>
-           <div>2</div>
-           <div>3</div>
-           <div>4</div>
-           <div>5</div> 
+           <div></div>
+           <div></div>
+           <div></div>
+           <div></div>
+           <div></div> 
         </div>
   </div>
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script
   src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
   integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U="
-  crossorigin="anonymous"
+  crossorigin="anonymous"></script>
 
-></script>
 
     <script src="/Develop/js/script.js"></script>
 </body>

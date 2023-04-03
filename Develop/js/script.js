@@ -4,10 +4,11 @@ var fetchDataButton = document.getElementById('fetch-button');
 var weatherForcast = document.getElementById('5Day-forcast');
  var searchButton= document.getElementById('search-box');
  var Today = document.getElementById('date-time');
+  Today ===today;
  var today = dayjs();
-   $('#currentDay').text(today.format('dddd,MMMM D'));  
-function getApi() {
-  var requestUrl = 'https://api.github.com/users?per_page=5';
+   $('#currentDay').text(today.format('MM/DD/YYYY'));  
+function getOpenWeatherData() {
+  var requestUrl = 'https://api.openweathermap.org/data/3.0/onecall?lat={lat}&lon={lon}&exclude={part}&appid={API key}';
 
   fetch(requestUrl)
     .then(function (response) {
@@ -37,5 +38,5 @@ function getApi() {
       }
     });
 }
-searchButton.addEventListener('click', getApi);
+searchButton.addEventListener('click', getOpenWeatherData);
   
